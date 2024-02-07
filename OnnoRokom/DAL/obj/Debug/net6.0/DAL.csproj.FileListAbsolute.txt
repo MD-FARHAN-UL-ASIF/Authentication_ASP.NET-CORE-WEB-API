@@ -1,0 +1,14 @@
+F:\OnnoRokomSoftwareLtd\OnnoRokom\DAL\obj\Debug\net6.0\DAL.csproj.AssemblyReference.cache
+F:\OnnoRokomSoftwareLtd\OnnoRokom\DAL\obj\Debug\net6.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+F:\OnnoRokomSoftwareLtd\OnnoRokom\DAL\obj\Debug\net6.0\DAL.AssemblyInfoInputs.cache
+F:\OnnoRokomSoftwareLtd\OnnoRokom\DAL\obj\Debug\net6.0\DAL.AssemblyInfo.cs
+F:\OnnoRokomSoftwareLtd\OnnoRokom\DAL\obj\Debug\net6.0\DAL.csproj.CoreCompileInputs.cache
+F:\OnnoRokomSoftwareLtd\OnnoRokom\DAL\bin\Debug\net6.0\DAL.deps.json
+F:\OnnoRokomSoftwareLtd\OnnoRokom\DAL\bin\Debug\net6.0\DAL.runtimeconfig.json
+F:\OnnoRokomSoftwareLtd\OnnoRokom\DAL\bin\Debug\net6.0\DAL.dll
+F:\OnnoRokomSoftwareLtd\OnnoRokom\DAL\bin\Debug\net6.0\DAL.pdb
+F:\OnnoRokomSoftwareLtd\OnnoRokom\DAL\obj\Debug\net6.0\DAL.dll
+F:\OnnoRokomSoftwareLtd\OnnoRokom\DAL\obj\Debug\net6.0\refint\DAL.dll
+F:\OnnoRokomSoftwareLtd\OnnoRokom\DAL\obj\Debug\net6.0\DAL.pdb
+F:\OnnoRokomSoftwareLtd\OnnoRokom\DAL\obj\Debug\net6.0\DAL.genruntimeconfig.cache
+F:\OnnoRokomSoftwareLtd\OnnoRokom\DAL\obj\Debug\net6.0\ref\DAL.dll
