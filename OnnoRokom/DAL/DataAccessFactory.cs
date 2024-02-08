@@ -17,5 +17,10 @@ namespace DAL
         {
             return new CategoryRepo(options);
         }
+
+        public static IQuestionRepo<Question, int, Question> QuestionData(DbContextOptions<DataContext> options)
+        {
+            return new QuestionRepo(options);
+        }
     }
 }
