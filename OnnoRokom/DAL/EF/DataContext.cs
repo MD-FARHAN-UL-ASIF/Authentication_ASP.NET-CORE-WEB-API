@@ -18,5 +18,11 @@ namespace DAL.EF
 
         public DbSet<UserRole> UserRoles { get; set; }
 
+        public DbSet<Question> Questions { get; set; }
+
+        public DbSet<Category> Categories { get; set; }
+
+        public DbSet<Answer> Answers { get; set; }
+
     }
 }

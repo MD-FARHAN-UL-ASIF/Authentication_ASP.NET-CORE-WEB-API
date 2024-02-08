@@ -8,10 +8,10 @@ namespace DAL.iINTERFACES
 {
     public interface IRepo<CLASS, ID, RET>
     {
-        List<CLASS> Get();
-        CLASS Get(ID id);
-        RET Create(CLASS obj);
-        RET Update(RET obj);
-        bool Delete(ID id);
+        Task<List<CLASS>> Get();
+        Task<CLASS> Get(ID id);
+        Task<RET> Create(CLASS obj);
+        Task<RET> Update(CLASS obj);
+        Task<bool> Delete(ID id);
     }
 }

@@ -5,7 +5,7 @@ namespace DAL.Repo
 {
     public class Repo
     {
-        public  DataContext db;
+        protected DataContext db;
 
         public Repo(DbContextOptions<DataContext> options)
         {
