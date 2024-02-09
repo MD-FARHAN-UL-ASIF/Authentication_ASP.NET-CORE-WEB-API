@@ -32,16 +32,16 @@ namespace BLL.Services
 
         public async Task<Response> Create(QuestionDTO questionDTO)
         {
-            try
-            {
-                var question = _mapper.Map<Question>(questionDTO);
-                var data = await DataAccessFactory.QuestionData(_dbContextOptions).Create(question);
-                return new Response(HttpStatusCode.Created, "Question created successfully", _mapper.Map<QuestionDTO>(data));
-            }
-            catch (Exception ex)
-            {
-                return new Response(HttpStatusCode.InternalServerError, $"Error: {ex.Message}");
-            }
+                try
+                {
+                    var question = _mapper.Map<Question>(questionDTO);
+                    var data = await DataAccessFactory.QuestionData(_dbContextOptions).Create(question);
+                    return new Response(HttpStatusCode.Created, "Question created successfully", _mapper.Map<QuestionDTO>(data));
+                }
+                catch (Exception ex)
+                {
+                    return new Response(HttpStatusCode.InternalServerError, $"Error: {ex.Message}");
+                }
         }
 
         public async Task<Response> Delete(int id)

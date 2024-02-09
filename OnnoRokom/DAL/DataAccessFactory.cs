@@ -22,5 +22,10 @@ namespace DAL
         {
             return new QuestionRepo(options);
         }
+
+        public static IAnswerRepo<Answer, int, Answer> AnswerData(DbContextOptions<DataContext> options)
+        {
+            return new AnswerRepo(options);
+        }
     }
 }
