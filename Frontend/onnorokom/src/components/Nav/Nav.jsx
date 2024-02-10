@@ -25,6 +25,9 @@
                         <NavLink
                             to="/create-category"
                         >Create Category</NavLink>
+                        <NavLink 
+                            to ="/create-question"
+                        >Create Question</NavLink>
                     </div>
                 </nav>
             </div>

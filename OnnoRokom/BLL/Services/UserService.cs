@@ -109,6 +109,7 @@ namespace BLL.Services
 
             LoginResult loginResult = new LoginResult
             {
+                Id = user.Id,
                 Name = user.Name,
                 Email = user.Email,
                 PhoneNumber = user.PhoneNumber,

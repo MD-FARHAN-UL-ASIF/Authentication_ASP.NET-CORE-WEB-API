@@ -19,12 +19,14 @@ const Login = () => {
 
             console.log(response.data);
             console.log(response.data.result.accessToken);
+            console.log(response.data.result.id);
 
             if (Object.keys(response.data).length === 0) {
                 alert("Login failed");
             } else {
                 alert("Login successful");
                 sessionStorage.setItem('accessToken', response.data.result.accessToken);
+                sessionStorage.setItem('userId', response.data.result.id); // Add this line to store userId in the session
                 // Redirect or handle success as needed
             }
         } catch (error) {
