@@ -15,13 +15,13 @@ builder.Services.AddDbContext<DataContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddControllers();
 
+
 builder.Services.AddScoped(typeof(IBaseRepo<>), typeof(BaseRepo<>));
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<ITokenService, TokenService>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddScoped<IQuestionService, QuestionService>();
 builder.Services.AddScoped<IAnswerService, AnswerService>();
-
 
 // Configure JWT authentication
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
@@ -35,6 +35,12 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             ValidateAudience = false
         };
     });
+
+// Configure CORS
+builder.Services.AddCors(p => p.AddPolicy("corspolicy", build =>
+{
+    build.WithOrigins("*").AllowAnyMethod().AllowAnyHeader();
+}));
 
 // Configure Swagger
 builder.Services.AddSwaggerGen(c =>
@@ -75,8 +81,10 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.UseAuthentication();
+app.UseRouting();
+app.UseCors("corspolicy");
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

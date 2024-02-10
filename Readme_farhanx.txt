@@ -13,4 +13,4 @@ after migration , need to add role mannualy in database:
 
 
 Currently User login, registration, Authentication using jwt, category, questions and answers part are done (Only Api) // 3:56 pm, 09/02/2024
-I will work on the front-end tonight.
+working on front-end
